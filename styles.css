@@ -1,0 +1,233 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    width: 100%;
+    background-color: #238baa;
+    padding: 10px 0;
+}
+.top-nav {
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+}
+
+.top-nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003c71;
+    padding: 20px;
+}
+
+.logo img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 190px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+    padding-right: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 2px;
+}
+/*segunda barra con dropdown */
+
+/* Estilos básicos para el contenedor del menú */
+.main-nav {
+    color: rgb(209, 118, 37);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 60px; 
+}
+
+/* Estilo para los items principales del menú */
+.main-nav > li {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px; /
+}
+
+/* Estilo para el enlace que abre el dropdown */
+.main-nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    background-color: #f1f1f1;
+}
+.dropdown-menu .todos {
+    display: block;
+    padding: 10px 15px;
+    background-color: #0cd3ab;
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+    border-top: 1px solid #ddd; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin-top: 5px; 
+}
+
+.dropdown-menu .todos:hover {
+    background-color: #12302f;
+    cursor: pointer;
+}
+
+.main-nav li {
+    list-style: none; 
+}
+
+/* Estilos para el dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    z-index: 10;
+}
+
+/* Estilo para las opciones del dropdown */
+.dropdown-menu li {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a {
+    color: #1f2526;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #75aab6;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilo para el título "Ahorro" */
+.dropdown > a {
+    font-weight: bold;
+    background-color: #ececec;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el hover del enlace principal */
+.main-nav > li > a:hover {
+    background-color: #75aab6;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.slidershow {
+    position: relative; 
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto de fade */
+.fade {
+    animation: fadeEffect 20s infinite;
+}
+
+@keyframes fadeEffect {
+    0%, 20% {
+        opacity: 1;
+    }
+    25%, 45% {
+        opacity: 0;
+    }
+    50%, 70% {
+        opacity: 1;
+    }
+    75%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Estilos para el contenido */
+.content {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #238baa;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
